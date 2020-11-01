@@ -64,8 +64,8 @@
       items: [
         'Home',
         'About',
-        'Events',
         'Our Team',
+        'Activities',
         'Gallery',
         'Contact',
       ],

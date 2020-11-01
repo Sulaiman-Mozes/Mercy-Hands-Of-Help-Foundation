@@ -17,7 +17,7 @@
       LoadSections([
         'hero',
         'services-offered',
-        'blogs',
+        'home-activities',
         'success-stories',
         'theme-features',
         'info',

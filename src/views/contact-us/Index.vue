@@ -17,7 +17,6 @@
         'hero-alt',
         'keep-in-touch',
         'map',
-        'newsletter',
       ]),
     ],
 

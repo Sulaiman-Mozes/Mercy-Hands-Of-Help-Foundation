@@ -1,5 +1,5 @@
 <template>
-  <section id="blogs">
+  <section id="home-activities">
     <v-container>
       <base-section-heading
         title="Recent Activities"
@@ -50,7 +50,7 @@
 
 <script>
   export default {
-    name: 'SectionBlogs',
+    name: 'SectionHomeActivities',
 
     data: () => ({
       articles: [

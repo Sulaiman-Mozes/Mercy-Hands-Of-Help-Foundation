@@ -36,9 +36,9 @@ const router = new Router({
           meta: { src: require('@/assets/contact-image.jpeg') },
         },
         {
-          path: 'events',
-          name: 'Events',
-          component: () => import('@/views/events/Index.vue'),
+          path: 'activities',
+          name: 'Activities',
+          component: () => import('@/views/activities/Index.vue'),
           meta: { src: require('@/assets/contact-image.jpeg') },
         },
         {

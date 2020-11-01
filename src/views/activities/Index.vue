@@ -9,14 +9,14 @@
   export default {
     name: 'Home',
 
-    metaInfo: { title: 'Events' },
+    metaInfo: { title: 'Activities' },
 
     extends: View,
 
     mixins: [
       LoadSections([
         'hero-alt',
-        'coming-soon',
+        'activities',
         'info',
       ]),
     ],
@@ -24,7 +24,7 @@
     props: {
       id: {
         type: String,
-        default: 'events',
+        default: 'activities',
       },
     },
   }
