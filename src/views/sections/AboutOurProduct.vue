@@ -27,41 +27,6 @@
         </v-col>
       </v-row>
     </v-container>
-
-    <base-section-heading
-      color="yellow"
-      title="Background"
-    />
-
-    <v-container>
-      <base-body
-        v-if="educationtext || $slots.default"
-        :text="educationtext"
-        space="2"
-      >
-        <slot />
-      </base-body>
-    </v-container>
-
-    <v-container>
-      <base-body
-        v-if="heathtext || $slots.default"
-        :text="heathtext"
-        space="2"
-      >
-        <slot />
-      </base-body>
-    </v-container>
-
-    <v-container>
-      <base-body
-        v-if="communitytext || $slots.default"
-        :text="communitytext"
-        space="2"
-      >
-        <slot />
-      </base-body>
-    </v-container>
   </base-section>
 </template>
 

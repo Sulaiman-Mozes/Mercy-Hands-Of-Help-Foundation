@@ -19,7 +19,10 @@
                 v-for="image in images"
                 :key="image"
                 class="d-flex child-flex"
-                cols="4"
+                cols="12"
+                sm="6"
+                md="4"
+                lg="4"
               >
                 <v-card
                   flat

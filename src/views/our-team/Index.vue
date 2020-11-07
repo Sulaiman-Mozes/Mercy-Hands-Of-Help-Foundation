@@ -16,7 +16,7 @@
     mixins: [
       LoadSections([
         'hero-alt',
-        'coming-soon',
+        'our-team',
         'info',
       ]),
     ],

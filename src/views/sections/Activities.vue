@@ -16,7 +16,7 @@
           <v-container>
             <v-row>
               <v-col
-                v-for="({src, title, text }, index) in activities"
+                v-for="({src, title, description, author }, index) in activities"
                 :key="index"
                 cols="12"
                 md="4"
@@ -26,8 +26,8 @@
                     class="mx-auto"
                   >
                     <v-img
-                      :src="require(`@/assets/gallery/${src}`)"
-                      :lazy-src="require(`@/assets/gallery/${src}`)"
+                      :src="require(`@/assets/activities/${src}`)"
+                      :lazy-src="require(`@/assets/activities/${src}`)"
                       aspect-ratio="1"
                       class="grey lighten-2"
                       height="275"
@@ -47,19 +47,19 @@
                     </v-img>
                     <v-list-item>
                       <v-list-item-content>
-                        <v-list-item-title class="headline">
+                        <v-list-item-title class="headline text-capitalize">
                           {{ title }}
                         </v-list-item-title>
-                        <v-list-item-subtitle>
+                        <v-list-item-subtitle class="mt-4">
                           <span class="font-weight-medium">Documented By&nbsp;:&nbsp;</span>&nbsp;&nbsp;
-                          <span>Kurt Wagner</span>
+                          <span>{{ author }}</span>
                         </v-list-item-subtitle>
                       </v-list-item-content>
                     </v-list-item>
 
                     <base-body
                       class="ma-2"
-                      :text="text"
+                      :text="description"
                       space="1"
                     >
                       <slot />
@@ -125,64 +125,34 @@
     data: () => ({
       activities: [
         {
-          src: 'gallery-1.jpg',
-          title: 'Education',
-          text: 'Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget tortor tempor, quis porta tellus dictum.',
+          src: 'widow-disabled-child.jpeg',
+          title: 'Helping A widow with A Disabled Child',
+          description: 'On the 10th Sept 2020, We visited a widow in Wakiso Uganda with a disabled grandson for 12 years. She lacks food, beddings, medication for the boy and awheel chair',
+          author: 'Jane Nalwoga',
         },
         {
-          src: 'gallery-2.jpg',
-          title: 'Poverty Sensitization',
-          text: 'Nam ut leo ipsum. Maecenas pretium aliquam feugiat. Aenean vel tempor est, vitae tincidunt risus. Sed sodales vestibulum nibh.',
+          src: 'single-mother-kisenyi.jpeg',
+          title: 'Struggling single mother in Kisenyi',
+          description: 'On the 7th Oct 2020, We visited a single mother Betty in Kisenyi Uganda. She lacks a proper house, food, clothings, beddings and medication cause she is sick.',
+          author: 'Jane Nalwoga',
         },
         {
-          src: 'gallery-3.jpg',
-          title: 'Covid 19 Sensitization',
-          text: 'Vestibulum in dictum velit, in rhoncus nibh. Maecenas neque libero, interdum a dignissim in, aliquet vitae lectus. Phasellus lorem enim, luctus ut velit eget.',
+          src: 'gulu-family.jpeg',
+          title: 'Struggling Family In Gulu',
+          description: 'On the 5th May 2020, We visited this family in Gulu whichs lacks clothes, food, edcation funds, clean water, proper house and beddings.',
+          author: 'Jane Nalwoga',
         },
         {
-          src: 'gallery-1.jpg',
-          title: 'Education',
-          text: 'Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget tortor tempor, quis porta tellus dictum.',
+          src: 'community-sensitization.jpeg',
+          title: 'Buikwe Community Sensitization',
+          description: 'Sensitizing Community in Buikwe on Gender based violence, HIV and supporting the girl child education.',
+          author: 'Jane Nalwoga',
         },
         {
-          src: 'gallery-2.jpg',
-          title: 'Poverty Sensitization',
-          text: 'Nam ut leo ipsum. Maecenas pretium aliquam feugiat. Aenean vel tempor est, vitae tincidunt risus. Sed sodales vestibulum nibh.',
-        },
-        {
-          src: 'gallery-3.jpg',
-          title: 'Covid 19 Sensitization',
-          text: 'Vestibulum in dictum velit, in rhoncus nibh. Maecenas neque libero, interdum a dignissim in, aliquet vitae lectus. Phasellus lorem enim, luctus ut velit eget.',
-        },
-        {
-          src: 'gallery-1.jpg',
-          title: 'Education',
-          text: 'Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget tortor tempor, quis porta tellus dictum.',
-        },
-        {
-          src: 'gallery-2.jpg',
-          title: 'Poverty Sensitization',
-          text: 'Nam ut leo ipsum. Maecenas pretium aliquam feugiat. Aenean vel tempor est, vitae tincidunt risus. Sed sodales vestibulum nibh.',
-        },
-        {
-          src: 'gallery-3.jpg',
-          title: 'Covid 19 Sensitization',
-          text: 'Vestibulum in dictum velit, in rhoncus nibh. Maecenas neque libero, interdum a dignissim in, aliquet vitae lectus. Phasellus lorem enim, luctus ut velit eget.',
-        },
-        {
-          src: 'gallery-3.jpg',
-          title: 'Covid 19 Sensitization',
-          text: 'Vestibulum in dictum velit, in rhoncus nibh. Maecenas neque libero, interdum a dignissim in, aliquet vitae lectus. Phasellus lorem enim, luctus ut velit eget.',
-        },
-        {
-          src: 'gallery-1.jpg',
-          title: 'Education',
-          text: 'Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget tortor tempor, quis porta tellus dictum.',
-        },
-        {
-          src: 'gallery-2.jpg',
-          title: 'Poverty Sensitization',
-          text: 'Nam ut leo ipsum. Maecenas pretium aliquam feugiat. Aenean vel tempor est, vitae tincidunt risus. Sed sodales vestibulum nibh.',
+          src: 'school-girl-donation.jpeg',
+          title: 'Donating re-usable sanitary pads',
+          description: 'In Buikwe district, we donated sanitary pads and knickers to a group of school girls.',
+          author: 'Jane Nalwoga',
         },
       ],
     }),

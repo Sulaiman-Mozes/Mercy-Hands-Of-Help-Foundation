@@ -15,9 +15,12 @@
             :key="i"
             cols="12"
             md="4"
+            height="100%"
           >
             <v-card
               class="px-4 py-8 elevation-6"
+              outlined
+               height="100%"
             >
               <v-theme-provider dark>
                 <div class="d-flex justify-center">
@@ -64,17 +67,17 @@
         {
           icon: 'mdi-school',
           title: 'Education',
-          text: 'As we give the Sunday school teachers, we realized that some of the Sunday school children were dropping out of school due to financial constraints occasioned by death of there parents. So we too k up the payment of the school fees and other scholastic materials using our funds and money donated by a few well wishers. Over time beneficiaries have finished school and many are responsible men and women of Uganda. It is from those success that we drive further inspiration to continue supporting the children from such poor backgrounds to complete their education  given numerous benefits of education. You can also support this cause bu contributing 100$ to keep a child in school for a full year in Uganda.',
+          text: 'As Sunday school teachers, we realized that some of the Sunday school children were dropping out of school due to financial constraits occassioned by death of there parents. So we took up the payment of their school fees and other scholastic materials using our savings and donations from a few well wishers. Over time, the beneficiaries have finished school and many are responsible men and women of Uganda. It is from those success that we drew further inspiration to continue supporting the children from disadvantaged families to complete their education. You can also support this cause bu contributing 100$ to keep a child in school for a full year in Uganda.',
         },
         {
           icon: 'mdi-hospital-box',
           title: 'Health',
-          text: 'From our education program we noticed that some of the beneficiaries especially girls we obstructed from school due to lack of basic commodities for proper menstrual hygiene was putting them at a risk of doping out of school leading to sex gender based violence, early pregnancies and HIV. Further more some of the beneficiaries were prematurely infected by HIV and therefore needed long life support to take their medication well. Those factors informed our health initiative. So therefore we started giving eceet fine non-reusable sanitary towels, pants and health education talks, adhesive concesllling leading to care cervical cancer screening, breast cancer screening. STI screening management.',
+          text: 'From our education programme we noticed that some of the beneficiaries especially girls were frequently absent from school. Our investigation revealed that some were absent because they lacked sanitary pads during their menstrual periods. So this lack was putting them at a risk of dropping out of school, transactional sex, gender based violence, early pregnancies and HIV infections. Those infected with HIV needed long life support to take their medicines well. These factors informed our health initiative therefore we started giving out sanitary pads, knickers, health education talks, adherance counselling, linkage to care, cervical cancer screening, breast cancer screening. sexually transmitted infections screening and management. This has been partially made possible through our partnership with Yolamu Sebalamu Medical Centre in Najjanankumbi Kampala Uganda. You cab be part of this story through your generous contibution to keep our beneficiaries healthy and improve their school attandance.',
         },
         {
           icon: 'mdi-charity',
           title: 'Charity',
-          text: 'In Uganda there are many gender disparities that affect the health of the people especially girls. The different gender roles are signed to girls in communities making them valuanable to many disease conditions  and dropping out of school. We there fore took on this initiative of engaging families about the dangers of these gender inequalities. So under this initiative we conduct gender based violence awareness campaigns in schools and in communities. We also link gender based violence victims to care and offer them the necessary physiological sup port. We hope in the future to support girls  who drop out of school for various reasons to give them financial as away of mitigating gender based violence.',
+          text: 'In Uganda there are many gender disperities that affect the health of the people especially girls. The different gender roles are assigned to girls in communities render them valuanable to many disease conditions  and dropping out of school. We therefore took on this initiative of engaging families about the dangers of these gender inequalities. So under this initiative we conduct gender based violence awareness campaigns in schools and in communities. We also link gender based violence victims to care and offer them the necessary psychological support. We look forward to supporting women and girls who drop out of school with financial independence as away of mitigating gender based violence.',
         },
       ],
     }),

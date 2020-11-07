@@ -13,14 +13,14 @@
 
       <v-row class="pb-12">
         <v-col
-          v-for="({ src, text, title }, i) in articles"
+          v-for="({ src, description, title }, i) in articles"
           :key="i"
           cols="12"
           md="4"
         >
           <v-img
-            :src="require(`@/assets/gallery/${src}`)"
-            :lazy-src="require(`@/assets/gallery/${src}`)"
+            :src="require(`@/assets/activities/${src}`)"
+            :lazy-src="require(`@/assets/activities/${src}`)"
             class="mb-4"
             height="275"
             max-width="100%"
@@ -32,8 +32,8 @@
           />
 
           <div
-            class="title font-weight-light mb-5"
-            v-text="text"
+            class="font-weight-light mb-4"
+            v-text="description"
           />
 
           <v-btn
@@ -55,19 +55,19 @@
     data: () => ({
       articles: [
         {
-          src: 'gallery-1.jpg',
-          title: 'Education',
-          text: 'Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget tortor tempor, quis porta tellus dictum.',
+          src: 'widow-disabled-child.jpeg',
+          title: 'Helping a widow with a disabled child',
+          description: 'On the 10th Sept 2020, We visited a widow in Wakiso Uganda with a disabled grandson for 12 years. She lacks food, beddings, medication for the boy and awheel chair',
         },
         {
-          src: 'gallery-2.jpg',
-          title: 'Poverty Sensitization',
-          text: 'Nam ut leo ipsum. Maecenas pretium aliquam feugiat. Aenean vel tempor est, vitae tincidunt risus. Sed sodales vestibulum nibh.',
+          src: 'single-mother-kisenyi.jpeg',
+          title: 'Struggling single mother in Kisenyi',
+          description: 'On the 7th Oct 2020, We visited a single mother Betty in Kisenyi Uganda. She lacks a proper house, food, clothings, beddings and medication cause she is sick.',
         },
         {
-          src: 'gallery-3.jpg',
-          title: 'Covid 19 Sensitization',
-          text: 'Vestibulum in dictum velit, in rhoncus nibh. Maecenas neque libero, interdum a dignissim in, aliquet vitae lectus. Phasellus lorem enim, luctus ut velit eget.',
+          src: 'gulu-family.jpeg',
+          title: 'Struggling family in Gulu',
+          description: 'On the 5th May 2020, We visited this family in Gulu whichs lacks clothes, food, edcation funds, clean water, proper house and beddings.',
         },
       ],
     }),
